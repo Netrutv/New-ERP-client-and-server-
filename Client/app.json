@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "ERP",
+    "slug": "mymapapp",
+    "version": "1.0.0",
+    "icon": "./assets/images/icon.png",
+    "scheme": "mymapapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com. .mymapapp",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Allow Team 75 to use your location to show your position on the map.",
+        "NSLocationAlwaysUsageDescription": "Allow Team 75 to track your shift path in the background.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Allow Team 75 to track your shift path even when the app is in the background.",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.anku24.mymapapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCejtHlEF4fn7-2UlGl6OGNaaxkSzHpgOc"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysPermission": "Allow Team 75 to track your shift path in the background."
+        }
+      ],
+      "@react-native-community/datetimepicker"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0050ec39-4048-4140-a68c-cbd16ef5b85b"
+      }
+    }
+  }
+}
