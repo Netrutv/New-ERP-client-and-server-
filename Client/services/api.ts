@@ -3,7 +3,7 @@ import axios from 'axios';
 // Replace with your current local IP
 //export const BASE_URL = 'http://192.168.1.6:5000/api';
 // export const BASE_URL = 'https://tracker-app-r6gy.onrender.com/api';
-export const BASE_URL = 'https://erp-server-pzev.onrender.com/api';
+export const BASE_URL = 'https://erp-server-lnoy.onrender.com/api';
 
 const apiClient = axios.create({
   baseURL: BASE_URL,
