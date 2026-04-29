@@ -23,7 +23,8 @@ app.use(express.json({ limit: '50mb' }));
 // ─────────────────────────────────────────────
 //  MongoDB Connection
 // ─────────────────────────────────────────────
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://netrutvainternational_db_user:Netrutv123@ac-ngtnwas-shard-00-00.e0z5ypt.mongodb.net:27017,ac-ngtnwas-shard-00-01.e0z5ypt.mongodb.net:27017,ac-ngtnwas-shard-00-02.e0z5ypt.mongodb.net:27017/myNewDB?ssl=true&replicaSet=atlas-oeix4a-shard-0&authSource=admin&retryWrites=true&w=majority';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://netrutvainternational_db_user:Netrutv123@cluster0.e0z5ypt.mongodb.net/tracking?retryWrites=true&w=majority&appName=Cluster0';
+
 
 mongoose.connect(MONGO_URI)
     .then(() => console.log('✅ MongoDB connected'))
